@@ -42,6 +42,7 @@ export default {
                 emit(event) {
                     events.push(event);
                 },
+                keepIframeSrcFn: true,
                 maskInputOptions: {
                     text: true,
                     email: true,
