@@ -42,7 +42,6 @@ export default {
                 emit(event) {
                     events.push(event);
                 },
-                keepIframeSrcFn: true,
                 recordCrossOriginIframes: true,
                 maskInputOptions: {
                     text: true,
