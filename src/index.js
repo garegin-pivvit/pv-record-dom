@@ -22,7 +22,7 @@ export default {
 };
 
 window.addEventListener("click", function (event) {
-    if(optionsArr.includes(event.target.id) || optionsArr.some(v => event.target.classList.contains(v))) {
+    if(optionsArr && (optionsArr.includes(event.target.id) || optionsArr.some(v => event.target.classList.contains(v)))) {
         setTimeout(() => EventHub.$emit("target-clicked"), 1 * 1000);
     }
 });
